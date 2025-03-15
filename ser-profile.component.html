@@ -1,0 +1,23 @@
+<div>
+  <h2>User Profile Management</h2>
+  <form>
+    <label>
+      Name:
+      <input [(ngModel)]="user.name" placeholder="Name" name="name" />
+    </label>
+    <br />
+    <label>
+      Email:
+      <input [(ngModel)]="user.email" placeholder="Email" name="email" />
+    </label>
+    <br />
+    <label>
+      Phone:
+      <input [(ngModel)]="user.phone" placeholder="Phone" name="phone" />
+    </label>
+  </form>
+  <h3>Updated Profile:</h3>
+  <p>Name: {{ user.name }}</p>
+  <p>Email: {{ user.email }}</p>
+  <p>Phone: {{ user.phone }}</p>
+</div>
