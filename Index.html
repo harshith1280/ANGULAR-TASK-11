@@ -1,0 +1,23 @@
+<div>
+  <h2>User Profile</h2>
+  <form>
+    <div>
+      <label for="name">Name:</label>
+      <input id="name" [(ngModel)]="user.name" name="name" />
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input id="email" [(ngModel)]="user.email" name="email" />
+    </div>
+    <div>
+      <label for="phone">Phone No:</label>
+      <input id="phone" [(ngModel)]="user.phone" name="phone" />
+    </div>
+  </form>
+  <div>
+    <h3>Updated Information</h3>
+    <p><strong>Name:</strong> {{ user.name }}</p>
+    <p><strong>Email:</strong> {{ user.email }}</p>
+    <p><strong>Phone No:</strong> {{ user.phone }}</p>
+  </div>
+</div>
